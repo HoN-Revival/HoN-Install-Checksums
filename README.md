@@ -27,11 +27,12 @@ The script may take a minute to traverse all the files. It will output a file ca
 A snippet of that json may look like this:
 
 ```
-{"avcodec-x64-58.dll": "4b3bf8f8c06d76cec90657c00d612028", "avdevice-x64-58.dll": "f797e34cb08518cda932e9cddb2c03ed",
-"avfilter-x64-7.dll": "b4b2d554a451480c51675b37f7e4e0f9", "avformat-x64-58.dll": "38c25db5309c364fdfeeecd0df3ade39",
-"avutil-x64-56.dll": "aac015dae2439d2bec35a3e970f9dc08", "ca-bundle.crt": "e617b745e14a8b19ec050e8a673ac0b8",
-"change_log.txt": "ca3665dfcff2fb2e2923309df35794b2", "change_log_color.txt": "0badb67ec590fed8b7301338d28022ca",
-"change_log_color_history.txt": "279777370d26da50f1a2b29be58a3312",
+{
+    "avcodec-x64-58.dll": "4b3bf8f8c06d76cec90657c00d612028",
+    "avdevice-x64-58.dll": "f797e34cb08518cda932e9cddb2c03ed",
+    "avfilter-x64-7.dll": "b4b2d554a451480c51675b37f7e4e0f9",
+    "avformat-x64-58.dll": "38c25db5309c364fdfeeecd0df3ade39",
+    "avutil-x64-56.dll": "aac015dae2439d2bec35a3e970f9dc08",
 
 // And so on
 
