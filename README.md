@@ -6,6 +6,8 @@ A project to track checksum dumps from actual HoN installs to be used to test/va
 The script traverses the files of a HoN install directory and computes a mapping of the `md5` checksums of each file. It skips some custom and dynamic
 files such as `.honmod`, `GPUCcache`, `resources999.s2z` and so forth.
 
+NOTE: For `.s2z` files (which are just custom file extensions for a `.zip` file), `md5` is not reliable on the archive itself. Instead, the `CRC-32` which is precomputed in the zip archive will be checked.
+
 The default path that it checks is for Windows 64-bit install:
 
 ```
