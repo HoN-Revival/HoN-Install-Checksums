@@ -77,8 +77,8 @@ The script may take a minute to traverse all the files.
 It will alert you if there are any checksum mismatches. For example:
 
 ```
-Checksum mismatch! File: game\resources0.s2z
-Expected checksum: 91acd2e945f53edb05ec71a00f7ab9ae
+Checksum mismatch! File: avcodec-x64-58.dll
+Expected checksum: 4b3bf8f8c06d76cec90657c00d612028
 Actual checksum: 3bf9514c7a9bdb244c9cdc6b4f88029f
 ```
 
