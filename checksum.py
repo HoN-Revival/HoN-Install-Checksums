@@ -9,7 +9,10 @@ EXCLUDED_FILE_MATCHERS = [
   'resources999.s2z',
   'HoN_ModMan.exe',
   'manifest.xml',
-  'GPUCache'
+  'GPUCache',
+  'shadercache',
+  'Ionic.Zip.Reduced.dll',  # for mod manager
+  'debug.log'
 ]
 
 checksums = {}

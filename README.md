@@ -45,3 +45,48 @@ These backups can be found in the [Checksum Dumps](https://github.com/HoN-Reviva
 
 For now, I am just backing up installs and updates directly from the HoN servers. If this cannot be completed in time, we may need to compute these based on backed up
 files.
+
+## Verifying checksums
+
+The default path that it checks is for Windows 64-bit install:
+
+```
+HON_INSTALL_PATH='C:\Program Files\Heroes of Newerth x64'
+```
+
+For now, the script just hardcodes the relative path to the checksum json:
+
+```
+# TODO: Take in the architecture, version, and os as input arguments
+HON_CHECKSUM_REL_PATH='checksum dumps\\wac\\x86_64\\4.10.1.json'
+```
+
+Simply edit these to point to the appropriate install directory and checksum path.
+
+Then simply run the script:
+
+```
+python verify_checksum.py
+```
+
+The script may take a minute to traverse all the files.
+
+It will alert you if there are any checksum mismatches. For example:
+
+```
+Checksum mismatch! File: game\resources0.s2z
+Expected checksum: 91acd2e945f53edb05ec71a00f7ab9ae
+Actual checksum: 3bf9514c7a9bdb244c9cdc6b4f88029f
+```
+
+If it succeeds you will see this message:
+
+```
+Checksum verified! Congrats! Your install is good :)
+```
+
+If there were any issues, you will see this message:
+
+```
+checksum failed :(
+```
