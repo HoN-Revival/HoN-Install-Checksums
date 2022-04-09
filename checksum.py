@@ -37,7 +37,7 @@ for root, dirs, files in os.walk(HON_PATH, topdown=True):
       # NOTE: `.s2z` files are just `.zip` files. Computing a checksum on the
       # compressed file is unreliable. Instead, iterate through the archive
       # and extract the pre-computed CRC-32 values.
-      if '.s2z' in name:
+      if '.s2z' in name and os.path.getsize(path) > 0:
         z=zipfile.ZipFile(path,'r')
         for info in z.infolist():
           filename = info.filename.replace('/', '\\')
